@@ -1,0 +1,153 @@
+.dashboard{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: capitalize;
+    padding: 0px 100px;
+}
+
+.create-pod{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    min-height: 50vh;
+}
+
+.create-heading{
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
+.inputBox{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.create-pod span , .create-contest span{
+    font-size: 2rem;
+    margin-right: 20px;
+}
+
+.create-pod input , .create-contest input{
+    width: 500px;
+    height: 30px;
+    margin-left: 10px;
+    font-size: 15px;
+    text-align: center;
+    outline: none;
+}
+
+#problemlink , #contestlink{
+    margin-left: 28px;
+}
+
+select , #contestdate , #contesttime{
+    width: 200px;
+    height: 30px;
+    margin-left: 100px;
+    outline: none;
+    text-align: center;
+}
+
+
+.create-contest{
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    margin-top: 100px;
+}
+
+.dashboard .btn{
+    margin-top: 15px;
+    width: 130px;
+    height: 40px;
+    font-size: 1.5rem;
+    background-color: orange;
+    margin-bottom: 10px;
+}
+
+.dashboard .btn:hover{
+    background-color: #d48a00;
+}
+
+
+@media screen and (max-width:880px) {
+    .create-pod input , .create-contest input{
+        width: 400px;
+        height: 30px;
+    }
+}
+
+@media screen and (max-width:790px){
+    .dashboard{
+        padding: 0px 50px;
+    }
+}
+
+@media screen and (max-width:700px){
+    .inputBox{
+        flex-direction: column;
+    }
+    .create-pod , .create-contest{
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 100px;
+    }
+    .create-pod span , .create-contest span{
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    select , #contestdate , #contesttime{
+        text-align: center;
+        margin-left: 0;
+    }
+    .create-contest{
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width:500px){
+    .dashboard{
+        padding: 0px 20px;
+    }
+    .create-heading{
+        font-size: 2.5rem;
+    }
+    .create-pod input , .create-contest input{
+        width: 300px;
+        height: 40px;
+    }
+
+    select , #contestdate , #contesttime{
+        height: 40px;
+    }
+    #problemlink, #contestlink{
+        margin-left: 2.5px;
+    }
+}
+
+@media screen and (max-width:370px){
+    .create-heading{
+        font-size: 1.7rem;
+    }
+    .inputBox{
+        margin-bottom: 20px;
+    }
+    .create-pod span , .create-contest span{
+        font-size: 1.8rem;
+    }
+    .create-pod input , .create-contest input{
+        width: 200px;
+        height: 40px;
+    }
+
+    #problemlink, #contestlink{
+        margin-left: 2.5px;
+    }
+}
